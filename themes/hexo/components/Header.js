@@ -160,7 +160,6 @@ const Header = props => {
 
           {/* 右侧功能 */}
           <div className='mr-1 flex justify-end items-center '>
-            {showSearchButton && <SearchButton />}
             <div className='hidden lg:flex'>
               {' '}
               <MenuListTop {...props} />
@@ -174,6 +173,7 @@ const Header = props => {
                 <i className='fas fa-bars' />
               )}
             </div>
+            {showSearchButton && <SearchButton />}
             {showRandomButton && <ButtonRandomPost {...props} />}
           </div>
         </div>
